@@ -4,3 +4,6 @@ GET {{VideoGameCharacterApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+GET {{VideoGameCharacterApi_HostAddress}}/api/VideoGameCharacters
+Accept: application/json
+

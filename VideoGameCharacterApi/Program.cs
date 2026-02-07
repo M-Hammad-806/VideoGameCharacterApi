@@ -1,4 +1,5 @@
 using Scalar.AspNetCore;
+using VideoGameCharacterApi.Services;
 namespace VideoGameCharacterApi
 {
     public class Program
@@ -10,6 +11,8 @@ namespace VideoGameCharacterApi
             // Add services to the container.
 
             builder.Services.AddControllers();
+
+            builder.Services.AddScoped<IVideoGameCharacteService, VideoGameCharacterService>();
             // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
             builder.Services.AddOpenApi();
 
